@@ -1,0 +1,423 @@
+package com.exory550.exorymusic.util.color;
+
+import static androidx.core.graphics.ColorUtils.RGBToXYZ;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Handler;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.FloatRange;
+import androidx.annotation.NonNull;
+import androidx.palette.graphics.Palette;
+
+import java.util.List;
+
+import com.exory550.appthemehelper.util.ATHUtil;
+import com.exory550.appthemehelper.util.ColorUtil;
+
+public class MediaNotificationProcessor {
+
+  private static final float POPULATION_FRACTION_FOR_MORE_VIBRANT = 1.0f;
+
+  private static final float MIN_SATURATION_WHEN_DECIDING = 0.19f;
+
+  private static final double MINIMUM_IMAGE_FRACTION = 0.002;
+
+  private static final float POPULATION_FRACTION_FOR_DOMINANT = 0.01f;
+
+  private static final float POPULATION_FRACTION_FOR_WHITE_OR_BLACK = 2.5f;
+
+  private static final float BLACK_MAX_LIGHTNESS = 0.08f;
+  private static final float WHITE_MIN_LIGHTNESS = 0.90f;
+  private static final int RESIZE_BITMAP_AREA = 150 * 150;
+  private static final ThreadLocal<double[]> TEMP_ARRAY = new ThreadLocal<>();
+
+  private static final int LIGHTNESS_TEXT_DIFFERENCE_LIGHT = 20;
+
+  private static final int LIGHTNESS_TEXT_DIFFERENCE_DARK = -10;
+
+  private float[] mFilteredBackgroundHsl = null;
+  private final Palette.Filter mBlackWhiteFilter =
+          (rgb, hsl) -> !isWhiteOrBlack(hsl);
+  private int backgroundColor;
+  private int secondaryTextColor;
+  private int primaryTextColor;
+  private int actionBarColor;
+  private Drawable drawable;
+  private final Context context;
+
+  public MediaNotificationProcessor(Context context, Drawable drawable) {
+    this.context = context;
+    this.drawable = drawable;
+    getMediaPalette();
+  }
+
+  public MediaNotificationProcessor(Context context, Bitmap bitmap) {
+    this.context = context;
+    this.drawable = new BitmapDrawable(context.getResources(), bitmap);
+    getMediaPalette();
+  }
+
+  public MediaNotificationProcessor(Context context) {
+    this.context = context;
+  }
+
+  private static boolean isColorLight(int backgroundColor) {
+    return calculateLuminance(backgroundColor) > 0.5f;
+  }
+
+  @FloatRange(from = 0.0, to = 1.0)
+  private static double calculateLuminance(@ColorInt int color) {
+    final double[] result = getTempDouble3Array();
+    colorToXYZ(color, result);
+    return result[1] / 100;
+  }
+
+  private static double[] getTempDouble3Array() {
+    double[] result = TEMP_ARRAY.get();
+    if (result == null) {
+      result = new double[3];
+      TEMP_ARRAY.set(result);
+    }
+    return result;
+  }
+
+  private static void colorToXYZ(@ColorInt int color, @NonNull double[] outXyz) {
+    RGBToXYZ(Color.red(color), Color.green(color), Color.blue(color), outXyz);
+  }
+
+  public void getPaletteAsync(
+      final OnPaletteLoadedListener onPaletteLoadedListener, Drawable drawable) {
+    this.drawable = drawable;
+    final Handler handler = new Handler();
+    new Thread(
+            () -> {
+              getMediaPalette();
+              handler.post(
+                      () -> onPaletteLoadedListener.onPaletteLoaded(MediaNotificationProcessor.this));
+            })
+        .start();
+  }
+
+  public void getPaletteAsync(OnPaletteLoadedListener onPaletteLoadedListener, Bitmap bitmap) {
+    this.drawable = new BitmapDrawable(context.getResources(), bitmap);
+    getPaletteAsync(onPaletteLoadedListener, this.drawable);
+  }
+
+  private void getMediaPalette() {
+    Bitmap bitmap;
+    if (drawable != null) {
+      int width = drawable.getIntrinsicWidth();
+      int height = drawable.getIntrinsicHeight();
+      int area = width * height;
+      if (area > RESIZE_BITMAP_AREA) {
+        double factor = Math.sqrt((float) RESIZE_BITMAP_AREA / area);
+        width = (int) (factor * width);
+        height = (int) (factor * height);
+      }
+      bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+      Canvas canvas = new Canvas(bitmap);
+      drawable.setBounds(0, 0, width, height);
+      drawable.draw(canvas);
+
+      Palette.Builder paletteBuilder =
+              Palette.from(bitmap)
+                      .setRegion(0, 0, bitmap.getWidth() / 2, bitmap.getHeight())
+                      .clearFilters()
+                      .resizeBitmapArea(RESIZE_BITMAP_AREA);
+      Palette palette;
+      backgroundColor = findBackgroundColorAndFilter(drawable);
+      float textColorStartWidthFraction = 0.4f;
+      paletteBuilder.setRegion(
+              (int) (bitmap.getWidth() * textColorStartWidthFraction),
+              0,
+              bitmap.getWidth(),
+              bitmap.getHeight());
+      if (mFilteredBackgroundHsl != null) {
+        paletteBuilder.addFilter(
+                (rgb, hsl) -> {
+                  float diff = Math.abs(hsl[0] - mFilteredBackgroundHsl[0]);
+                  return diff > 10 && diff < 350;
+                });
+      }
+      paletteBuilder.addFilter(mBlackWhiteFilter);
+      palette = paletteBuilder.generate();
+      int foregroundColor = selectForegroundColor(backgroundColor, palette);
+      ensureColors(backgroundColor, foregroundColor);
+    }
+  }
+
+  private int selectForegroundColor(int backgroundColor, Palette palette) {
+    if (isColorLight(backgroundColor)) {
+      return selectForegroundColorForSwatches(
+          palette.getDarkVibrantSwatch(),
+          palette.getVibrantSwatch(),
+          palette.getDarkMutedSwatch(),
+          palette.getMutedSwatch(),
+          palette.getDominantSwatch(),
+          Color.BLACK);
+    } else {
+      return selectForegroundColorForSwatches(
+          palette.getLightVibrantSwatch(),
+          palette.getVibrantSwatch(),
+          palette.getLightMutedSwatch(),
+          palette.getMutedSwatch(),
+          palette.getDominantSwatch(),
+          Color.WHITE);
+    }
+  }
+
+  public boolean isLight() {
+    return isColorLight(backgroundColor);
+  }
+
+  private int selectForegroundColorForSwatches(
+      Palette.Swatch moreVibrant,
+      Palette.Swatch vibrant,
+      Palette.Swatch moreMutedSwatch,
+      Palette.Swatch mutedSwatch,
+      Palette.Swatch dominantSwatch,
+      int fallbackColor) {
+    Palette.Swatch coloredCandidate = selectVibrantCandidate(moreVibrant, vibrant);
+    if (coloredCandidate == null) {
+      coloredCandidate = selectMutedCandidate(mutedSwatch, moreMutedSwatch);
+    }
+    if (coloredCandidate != null) {
+      if (dominantSwatch == coloredCandidate) {
+        return coloredCandidate.getRgb();
+      } else if ((float) coloredCandidate.getPopulation() / dominantSwatch.getPopulation()
+              < POPULATION_FRACTION_FOR_DOMINANT
+          && dominantSwatch.getHsl()[1] > MIN_SATURATION_WHEN_DECIDING) {
+        return dominantSwatch.getRgb();
+      } else {
+        return coloredCandidate.getRgb();
+      }
+    } else if (hasEnoughPopulation(dominantSwatch)) {
+      return dominantSwatch.getRgb();
+    } else {
+      return fallbackColor;
+    }
+  }
+
+  private Palette.Swatch selectMutedCandidate(Palette.Swatch first, Palette.Swatch second) {
+    boolean firstValid = hasEnoughPopulation(first);
+    boolean secondValid = hasEnoughPopulation(second);
+    if (firstValid && secondValid) {
+      float firstSaturation = first.getHsl()[1];
+      float secondSaturation = second.getHsl()[1];
+      float populationFraction = first.getPopulation() / (float) second.getPopulation();
+      if (firstSaturation * populationFraction > secondSaturation) {
+        return first;
+      } else {
+        return second;
+      }
+    } else if (firstValid) {
+      return first;
+    } else if (secondValid) {
+      return second;
+    }
+    return null;
+  }
+
+  private Palette.Swatch selectVibrantCandidate(Palette.Swatch first, Palette.Swatch second) {
+    boolean firstValid = hasEnoughPopulation(first);
+    boolean secondValid = hasEnoughPopulation(second);
+    if (firstValid && secondValid) {
+      int firstPopulation = first.getPopulation();
+      int secondPopulation = second.getPopulation();
+      if (firstPopulation / (float) secondPopulation < POPULATION_FRACTION_FOR_MORE_VIBRANT) {
+        return second;
+      } else {
+        return first;
+      }
+    } else if (firstValid) {
+      return first;
+    } else if (secondValid) {
+      return second;
+    }
+    return null;
+  }
+
+  private boolean hasEnoughPopulation(Palette.Swatch swatch) {
+    return swatch != null
+        && (swatch.getPopulation() / (float) RESIZE_BITMAP_AREA > MINIMUM_IMAGE_FRACTION);
+  }
+
+  public int findBackgroundColorAndFilter(Drawable drawable) {
+    int width = drawable.getIntrinsicWidth();
+    int height = drawable.getIntrinsicHeight();
+    int area = width * height;
+
+    double factor = Math.sqrt((float) RESIZE_BITMAP_AREA / area);
+    width = (int) (factor * width);
+    height = (int) (factor * height);
+
+    Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+    Canvas canvas = new Canvas(bitmap);
+    drawable.setBounds(0, 0, width, height);
+    drawable.draw(canvas);
+
+    Palette.Builder paletteBuilder =
+        Palette.from(bitmap)
+            .setRegion(0, 0, bitmap.getWidth() / 2, bitmap.getHeight())
+            .clearFilters()
+            .resizeBitmapArea(RESIZE_BITMAP_AREA);
+    Palette palette = paletteBuilder.generate();
+    Palette.Swatch dominantSwatch = palette.getDominantSwatch();
+    if (dominantSwatch == null) {
+      mFilteredBackgroundHsl = null;
+      return Color.WHITE;
+    }
+
+    if (!isWhiteOrBlack(dominantSwatch.getHsl())) {
+      mFilteredBackgroundHsl = dominantSwatch.getHsl();
+      return dominantSwatch.getRgb();
+    }
+    List<Palette.Swatch> swatches = palette.getSwatches();
+    float highestNonWhitePopulation = -1;
+    Palette.Swatch second = null;
+    for (Palette.Swatch swatch : swatches) {
+      if (swatch != dominantSwatch
+          && swatch.getPopulation() > highestNonWhitePopulation
+          && !isWhiteOrBlack(swatch.getHsl())) {
+        second = swatch;
+        highestNonWhitePopulation = swatch.getPopulation();
+      }
+    }
+    if (second == null) {
+      mFilteredBackgroundHsl = null;
+      return dominantSwatch.getRgb();
+    }
+    if (dominantSwatch.getPopulation() / highestNonWhitePopulation
+        > POPULATION_FRACTION_FOR_WHITE_OR_BLACK) {
+      mFilteredBackgroundHsl = null;
+      return dominantSwatch.getRgb();
+    } else {
+      mFilteredBackgroundHsl = second.getHsl();
+      return second.getRgb();
+    }
+  }
+
+  private boolean isWhiteOrBlack(float[] hsl) {
+    return isBlack(hsl) || isWhite(hsl);
+  }
+
+  private boolean isBlack(float[] hslColor) {
+    return hslColor[2] <= BLACK_MAX_LIGHTNESS;
+  }
+
+  private boolean isWhite(float[] hslColor) {
+    return hslColor[2] >= WHITE_MIN_LIGHTNESS;
+  }
+
+  private void ensureColors(int backgroundColor, int mForegroundColor) {
+    {
+      double backLum = NotificationColorUtil.calculateLuminance(backgroundColor);
+      double textLum = NotificationColorUtil.calculateLuminance(mForegroundColor);
+      double contrast = NotificationColorUtil.calculateContrast(mForegroundColor, backgroundColor);
+      boolean backgroundLight =
+          backLum > textLum
+                  && NotificationColorUtil.satisfiesTextContrast(backgroundColor, Color.BLACK)
+              || backLum <= textLum
+                  && !NotificationColorUtil.satisfiesTextContrast(backgroundColor, Color.WHITE);
+      if (contrast < 4.5f) {
+        if (backgroundLight) {
+          secondaryTextColor =
+              NotificationColorUtil.findContrastColor(
+                  mForegroundColor, backgroundColor, true, 4.5f);
+          primaryTextColor =
+              NotificationColorUtil.changeColorLightness(
+                  secondaryTextColor, -LIGHTNESS_TEXT_DIFFERENCE_LIGHT);
+        } else {
+          secondaryTextColor =
+              NotificationColorUtil.findContrastColorAgainstDark(
+                  mForegroundColor, backgroundColor, true, 4.5f);
+          primaryTextColor =
+              NotificationColorUtil.changeColorLightness(
+                  secondaryTextColor, -LIGHTNESS_TEXT_DIFFERENCE_DARK);
+        }
+      } else {
+        primaryTextColor = mForegroundColor;
+        secondaryTextColor =
+            NotificationColorUtil.changeColorLightness(
+                primaryTextColor,
+                backgroundLight ? LIGHTNESS_TEXT_DIFFERENCE_LIGHT : LIGHTNESS_TEXT_DIFFERENCE_DARK);
+        if (NotificationColorUtil.calculateContrast(secondaryTextColor, backgroundColor) < 4.5f) {
+          if (backgroundLight) {
+            secondaryTextColor =
+                NotificationColorUtil.findContrastColor(
+                    secondaryTextColor, backgroundColor, true, 4.5f);
+          } else {
+            secondaryTextColor =
+                NotificationColorUtil.findContrastColorAgainstDark(
+                    secondaryTextColor, backgroundColor, true, 4.5f);
+          }
+          primaryTextColor =
+              NotificationColorUtil.changeColorLightness(
+                  secondaryTextColor,
+                  backgroundLight
+                      ? -LIGHTNESS_TEXT_DIFFERENCE_LIGHT
+                      : -LIGHTNESS_TEXT_DIFFERENCE_DARK);
+        }
+      }
+    }
+    actionBarColor = NotificationColorUtil.resolveActionBarColor(context, backgroundColor);
+  }
+
+  public int getPrimaryTextColor() {
+    return primaryTextColor;
+  }
+
+  public int getSecondaryTextColor() {
+    return secondaryTextColor;
+  }
+
+  public int getActionBarColor() {
+    return actionBarColor;
+  }
+
+  public int getBackgroundColor() {
+    return backgroundColor;
+  }
+
+  boolean isWhiteColor(int color) {
+    return calculateLuminance(color) > 0.6f;
+  }
+
+  public int getMightyColor() {
+    boolean isDarkBg =
+        ColorUtil.INSTANCE.isColorLight(
+            ATHUtil.INSTANCE.resolveColor(context, com.google.android.material.R.attr.colorSurface));
+    if (isDarkBg) {
+      if (isColorLight(backgroundColor)) {
+        return primaryTextColor;
+      } else {
+        return backgroundColor;
+      }
+    } else {
+      if (isColorLight(backgroundColor)) {
+        return backgroundColor;
+      } else {
+        return primaryTextColor;
+      }
+    }
+  }
+
+  public interface OnPaletteLoadedListener {
+    void onPaletteLoaded(MediaNotificationProcessor mediaNotificationProcessor);
+  }
+
+  public static MediaNotificationProcessor errorColor(Context context) {
+    MediaNotificationProcessor errorColors = new MediaNotificationProcessor(context);
+    errorColors.backgroundColor = -15724528;
+    errorColors.primaryTextColor = -6974059;
+    errorColors.secondaryTextColor = -8684677;
+    errorColors.actionBarColor = -6974059;
+    return errorColors;
+  }
+}
