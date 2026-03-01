@@ -1,0 +1,22 @@
+package com.exory550.exorymusic.lyrics;
+
+public class Lrc {
+  private long time;
+  private String text;
+
+  public long getTime() {
+    return time;
+  }
+
+  public void setTime(long time) {
+    this.time = time;
+  }
+
+  public String getText() {
+    return text;
+  }
+
+  public void setText(String text) {
+    this.text = text;
+  }
+}
