@@ -1,0 +1,118 @@
+package com.exory550.exorymusic.glide
+
+import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.renderscript.*
+import androidx.annotation.FloatRange
+import com.exory550.exorymusic.BuildConfig
+import com.exory550.exorymusic.helper.StackBlur
+import com.exory550.exorymusic.util.ImageUtil
+import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool
+import com.bumptech.glide.load.resource.bitmap.BitmapTransformation
+import java.security.MessageDigest
+
+@Suppress("Deprecation")
+class BlurTransformation private constructor(builder: Builder) : BitmapTransformation() {
+
+    private var context: Context? = null
+    private var blurRadius = 0f
+    private var sampling = 0
+
+    init {
+        this.context = builder.context
+        this.blurRadius = builder.blurRadius
+        this.sampling = builder.sampling
+    }
+
+    class Builder(val context: Context) {
+        private var bitmapPool: BitmapPool? = null
+        var blurRadius = DEFAULT_BLUR_RADIUS
+        var sampling = 0
+
+        fun blurRadius(@FloatRange(from = 0.0, to = 25.0) blurRadius: Float): Builder {
+            this.blurRadius = blurRadius
+            return this
+        }
+
+        fun sampling(sampling: Int): Builder {
+            this.sampling = sampling
+            return this
+        }
+
+        fun bitmapPool(bitmapPool: BitmapPool?): Builder {
+            this.bitmapPool = bitmapPool
+            return this
+        }
+
+        fun build(): BlurTransformation {
+            return if (bitmapPool != null) {
+                BlurTransformation(this)
+            } else BlurTransformation(this)
+        }
+    }
+
+    override fun transform(
+        pool: BitmapPool,
+        toTransform: Bitmap,
+        outWidth: Int,
+        outHeight: Int,
+    ): Bitmap {
+        val sampling = if (this.sampling == 0) {
+            ImageUtil.calculateInSampleSize(toTransform.width, toTransform.height, 100)
+        } else {
+            this.sampling
+        }
+        val width = toTransform.width
+        val height = toTransform.height
+        val scaledWidth = width / sampling
+        val scaledHeight = height / sampling
+        val out = pool[scaledWidth, scaledHeight, Bitmap.Config.ARGB_8888]
+        val canvas = Canvas(out)
+        canvas.scale(1 / sampling.toFloat(), 1 / sampling.toFloat())
+        val paint = Paint()
+        paint.flags = Paint.FILTER_BITMAP_FLAG
+        canvas.drawBitmap(toTransform, 0f, 0f, paint)
+
+        try {
+            val rs = RenderScript.create(context!!.applicationContext)
+            val input = Allocation.createFromBitmap(
+                rs,
+                out,
+                Allocation.MipmapControl.MIPMAP_NONE,
+                Allocation.USAGE_SCRIPT
+            )
+            val output = Allocation.createTyped(rs, input.type)
+            val script = ScriptIntrinsicBlur.create(rs, Element.U8_4(rs))
+
+            script.setRadius(blurRadius)
+            script.setInput(input)
+            script.forEach(output)
+
+            output.copyTo(out)
+            output.destroy()
+            script.destroy()
+            input.destroy()
+            rs.destroy()
+
+            return out
+        } catch (e: RSRuntimeException) {
+            if (BuildConfig.DEBUG) e.printStackTrace()
+        }
+
+        return StackBlur.blur(out, blurRadius)
+    }
+
+    override fun updateDiskCacheKey(messageDigest: MessageDigest) {
+        messageDigest.update(
+            "BlurTransformation(radius=$blurRadius, sampling=$sampling)".toByteArray(
+                CHARSET
+            )
+        )
+    }
+
+    companion object {
+        const val DEFAULT_BLUR_RADIUS = 5f
+    }
+}
