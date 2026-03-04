@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="ExoryShapeableImageView">
+        <attr name="exoryCornerSize" format="dimension" />
+        <attr name="circleShape" format="boolean" />
+    </declare-styleable>
+</resources>
