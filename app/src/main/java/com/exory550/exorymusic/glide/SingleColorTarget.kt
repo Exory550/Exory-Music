@@ -2,7 +2,7 @@ package com.exory550.exorymusic.glide
 
 import android.graphics.drawable.Drawable
 import android.widget.ImageView
-import com.exory550.appthemehelper.util.ATHUtil
+import code.name.exory550.appthemehelper.util.ATHUtil
 import com.exory550.exorymusic.glide.palette.BitmapPaletteTarget
 import com.exory550.exorymusic.glide.palette.BitmapPaletteWrapper
 import com.exory550.exorymusic.util.ColorUtil

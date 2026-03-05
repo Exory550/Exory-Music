@@ -12,9 +12,9 @@ import androidx.core.view.updateLayoutParams
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.exory550.appthemehelper.common.ATHToolbarActivity
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.common.ATHToolbarActivity
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.*
 import com.exory550.exorymusic.adapter.HomeAdapter
 import com.exory550.exorymusic.databinding.FragmentHomeBinding

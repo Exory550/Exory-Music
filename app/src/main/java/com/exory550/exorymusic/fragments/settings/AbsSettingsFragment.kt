@@ -9,7 +9,7 @@ import androidx.core.view.updatePadding
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceManager
-import com.exory550.appthemehelper.common.prefs.supportv7.ATEPreferenceFragmentCompat
+import code.name.exory550.appthemehelper.common.prefs.supportv7.ATEPreferenceFragmentCompat
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.extensions.dip
 import com.exory550.exorymusic.preferences.*

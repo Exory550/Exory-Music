@@ -8,8 +8,8 @@ import android.view.KeyEvent
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode
 import androidx.core.os.LocaleListCompat
-import com.exory550.appthemehelper.common.ATHToolbarActivity
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.common.ATHToolbarActivity
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.extensions.*
 import com.exory550.exorymusic.util.PreferenceUtil

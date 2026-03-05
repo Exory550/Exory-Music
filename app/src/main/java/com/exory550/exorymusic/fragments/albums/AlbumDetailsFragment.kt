@@ -15,8 +15,8 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.exory550.appthemehelper.common.ATHToolbarActivity.getToolbarBackgroundColor
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.common.ATHToolbarActivity.getToolbarBackgroundColor
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.EXTRA_ALBUM_ID
 import com.exory550.exorymusic.EXTRA_ARTIST_ID
 import com.exory550.exorymusic.EXTRA_ARTIST_NAME

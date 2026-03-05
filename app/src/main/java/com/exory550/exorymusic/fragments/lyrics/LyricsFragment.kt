@@ -13,9 +13,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import androidx.transition.Fade
-import com.exory550.appthemehelper.common.ATHToolbarActivity
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.common.ATHToolbarActivity
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.activities.tageditor.TagWriter
 import com.exory550.exorymusic.databinding.FragmentLyricsBinding

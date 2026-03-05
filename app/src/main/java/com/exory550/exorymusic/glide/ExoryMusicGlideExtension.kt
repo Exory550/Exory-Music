@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
-import com.exory550.appthemehelper.util.TintHelper
+import code.name.exory550.appthemehelper.util.TintHelper
 import com.exory550.exorymusic.App.Companion.getContext
 import com.exory550.exorymusic.Constants.USER_BANNER
 import com.exory550.exorymusic.Constants.USER_PROFILE

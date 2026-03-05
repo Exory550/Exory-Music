@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.EXTRA_PLAYLIST
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.db.PlaylistWithSongs

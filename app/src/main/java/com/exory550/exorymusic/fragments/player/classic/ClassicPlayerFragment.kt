@@ -15,9 +15,9 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.commit
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.TintHelper
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.TintHelper
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.adapter.song.PlayingQueueAdapter
 import com.exory550.exorymusic.databinding.FragmentClassicPlayerBinding

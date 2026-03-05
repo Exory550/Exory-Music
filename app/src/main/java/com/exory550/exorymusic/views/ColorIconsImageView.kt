@@ -7,9 +7,9 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.content.ContextCompat
 import androidx.core.content.withStyledAttributes
-import com.exory550.appthemehelper.ThemeStore
-import com.exory550.appthemehelper.util.ATHUtil
-import com.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.util.ATHUtil
+import code.name.exory550.appthemehelper.util.ColorUtil
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.util.PreferenceUtil
 import com.exory550.exorymusic.util.RetroColorUtil

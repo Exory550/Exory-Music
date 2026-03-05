@@ -15,7 +15,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.core.app.ActivityCompat
 import androidx.core.content.getSystemService
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.extensions.accentColor
 import com.exory550.exorymusic.extensions.rootView

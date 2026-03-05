@@ -12,10 +12,10 @@ import android.graphics.drawable.Drawable
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
 import androidx.core.graphics.drawable.toBitmap
-import com.exory550.appthemehelper.util.ATHUtil.resolveColor
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.MaterialValueHelper
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.ATHUtil.resolveColor
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.activities.MainActivity
 import com.exory550.exorymusic.extensions.getTintedDrawable

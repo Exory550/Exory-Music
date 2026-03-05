@@ -6,8 +6,8 @@ import android.view.View
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageButton
 import android.widget.TextView
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.TintHelper
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.TintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentCardBlurPlayerPlaybackControlsBinding
 import com.exory550.exorymusic.extensions.applyColor

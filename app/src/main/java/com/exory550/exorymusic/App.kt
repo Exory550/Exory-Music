@@ -3,8 +3,8 @@ package com.exory550.exorymusic
 import android.app.Application
 import androidx.preference.PreferenceManager
 import cat.ereza.customactivityoncrash.config.CaocConfig
-import com.exory550.appthemehelper.ThemeStore
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.activities.ErrorActivity
 import com.exory550.exorymusic.activities.MainActivity
 import com.exory550.exorymusic.appshortcuts.DynamicShortcutManager
@@ -26,7 +26,7 @@ class App : Application() {
         }
         if (!ThemeStore.isConfigured(this, 3)) {
             ThemeStore.editTheme(this)
-                .accentColorRes(com.exory550.appthemehelper.R.color.md_deep_purple_A200)
+                .accentColorRes(code.name.exory550.appthemehelper.R.color.md_deep_purple_A200)
                 .coloredNavigationBar(true)
                 .commit()
         }

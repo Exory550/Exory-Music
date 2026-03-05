@@ -31,7 +31,7 @@ import androidx.core.content.getSystemService
 import androidx.core.os.BundleCompat
 import androidx.media.MediaBrowserServiceCompat
 import androidx.preference.PreferenceManager
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.*
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.activities.LockScreenActivity

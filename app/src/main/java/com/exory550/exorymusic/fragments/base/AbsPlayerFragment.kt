@@ -22,7 +22,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.navigation.navOptions
 import androidx.viewpager.widget.ViewPager
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.EXTRA_ALBUM_ID
 import com.exory550.exorymusic.EXTRA_ARTIST_ID
 import com.exory550.exorymusic.R

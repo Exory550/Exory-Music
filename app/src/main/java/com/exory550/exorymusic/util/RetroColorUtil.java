@@ -18,9 +18,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.exory550.appthemehelper.ThemeStore;
-import com.exory550.appthemehelper.util.ColorUtil;
-import com.exory550.appthemehelper.util.VersionUtils;
+import code.name.exory550.appthemehelper.ThemeStore;
+import code.name.exory550.appthemehelper.util.ColorUtil;
+import code.name.exory550.appthemehelper.util.VersionUtils;
 
 public class RetroColorUtil {
   public static int desaturateColor(int color, float ratio) {
@@ -209,7 +209,7 @@ public class RetroColorUtil {
 
   public static int getMD3AccentColor(@NotNull Context context) {
     if (VersionUtils.hasS()) {
-      return ContextCompat.getColor(context, com.exory550.appthemehelper.R.color.m3_accent_color);
+      return ContextCompat.getColor(context, code.name.exory550.appthemehelper.R.color.m3_accent_color);
     } else {
       return ThemeStore.Companion.accentColor(context);
     }

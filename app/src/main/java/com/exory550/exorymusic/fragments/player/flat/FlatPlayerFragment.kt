@@ -6,9 +6,9 @@ import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.widget.Toolbar
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.MaterialValueHelper
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentFlatPlayerBinding
 import com.exory550.exorymusic.extensions.colorControlNormal

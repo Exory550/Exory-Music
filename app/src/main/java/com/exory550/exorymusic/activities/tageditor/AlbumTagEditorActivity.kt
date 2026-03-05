@@ -13,7 +13,7 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
-import com.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.ActivityAlbumTagEditorBinding
 import com.exory550.exorymusic.extensions.*

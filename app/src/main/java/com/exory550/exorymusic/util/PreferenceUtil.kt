@@ -6,7 +6,7 @@ import androidx.core.content.res.use
 import androidx.fragment.app.Fragment
 import androidx.preference.PreferenceManager
 import androidx.viewpager.widget.ViewPager
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.*
 import com.exory550.exorymusic.extensions.getIntRes
 import com.exory550.exorymusic.extensions.getStringOrDefault

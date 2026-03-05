@@ -14,7 +14,7 @@ import androidx.core.net.toUri
 import androidx.media.AudioAttributesCompat
 import androidx.media.AudioFocusRequestCompat
 import androidx.media.AudioManagerCompat
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.extensions.showToast
 import com.exory550.exorymusic.service.playback.Playback

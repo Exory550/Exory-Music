@@ -6,7 +6,7 @@ import android.os.Environment
 import android.provider.MediaStore
 import android.provider.MediaStore.Audio.AudioColumns
 import android.provider.MediaStore.Audio.Media
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.Constants
 import com.exory550.exorymusic.Constants.IS_MUSIC
 import com.exory550.exorymusic.Constants.baseProjection

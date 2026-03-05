@@ -8,8 +8,8 @@ import android.view.View
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.exory550.appthemehelper.common.ATHToolbarActivity.getToolbarBackgroundColor
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.common.ATHToolbarActivity.getToolbarBackgroundColor
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentLibraryBinding
 import com.exory550.exorymusic.dialogs.CreatePlaylistDialog

@@ -9,8 +9,8 @@ import android.graphics.drawable.Drawable
 import android.view.View
 import android.widget.RemoteViews
 import androidx.core.graphics.drawable.toBitmap
-import com.exory550.appthemehelper.util.MaterialValueHelper
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.activities.MainActivity
 import com.exory550.exorymusic.appwidgets.base.BaseAppWidget

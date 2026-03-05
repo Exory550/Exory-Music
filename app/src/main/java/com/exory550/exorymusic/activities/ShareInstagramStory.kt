@@ -10,8 +10,8 @@ import android.view.MenuItem
 import androidx.core.net.toUri
 import androidx.core.os.BundleCompat
 import androidx.core.view.drawToBitmap
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
 import com.exory550.exorymusic.activities.base.AbsThemeActivity
 import com.exory550.exorymusic.databinding.ActivityShareInstagramBinding
 import com.exory550.exorymusic.extensions.accentColor

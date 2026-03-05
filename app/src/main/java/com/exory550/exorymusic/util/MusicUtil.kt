@@ -12,7 +12,7 @@ import androidx.core.content.FileProvider
 import androidx.core.content.contentValuesOf
 import androidx.core.net.toUri
 import androidx.fragment.app.FragmentActivity
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.Constants
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.db.PlaylistEntity

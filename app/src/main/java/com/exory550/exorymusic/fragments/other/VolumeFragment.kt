@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.getSystemService
 import androidx.fragment.app.Fragment
-import com.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.ThemeStore
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentVolumeBinding
 import com.exory550.exorymusic.extensions.applyColor

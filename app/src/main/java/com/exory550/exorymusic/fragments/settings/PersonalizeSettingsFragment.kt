@@ -2,9 +2,9 @@ package com.exory550.exorymusic.fragments.settings
 
 import android.os.Bundle
 import android.view.View
-import com.exory550.appthemehelper.common.prefs.supportv7.ATEListPreference
-import com.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.common.prefs.supportv7.ATEListPreference
+import code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.*
 
 class PersonalizeSettingsFragment : AbsSettingsFragment() {

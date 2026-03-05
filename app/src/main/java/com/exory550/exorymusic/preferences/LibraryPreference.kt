@@ -8,7 +8,7 @@ import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat.SRC_IN
 import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.exory550.appthemehelper.common.prefs.supportv7.ATEDialogPreference
+import code.name.exory550.appthemehelper.common.prefs.supportv7.ATEDialogPreference
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.adapter.CategoryInfoAdapter
 import com.exory550.exorymusic.databinding.PreferenceDialogLibraryCategoriesBinding

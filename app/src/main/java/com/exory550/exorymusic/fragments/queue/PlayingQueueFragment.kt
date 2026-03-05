@@ -6,9 +6,9 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.MaterialValueHelper
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.activities.MainActivity
 import com.exory550.exorymusic.adapter.song.PlayingQueueAdapter

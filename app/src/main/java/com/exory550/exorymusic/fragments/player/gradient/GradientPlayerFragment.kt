@@ -19,8 +19,8 @@ import androidx.fragment.app.commit
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.adapter.song.PlayingQueueAdapter
 import com.exory550.exorymusic.databinding.FragmentGradientPlayerBinding

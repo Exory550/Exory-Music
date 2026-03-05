@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.IBinder
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.db.toPlayCount
 import com.exory550.exorymusic.helper.MusicPlayerRemote

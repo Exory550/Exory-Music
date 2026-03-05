@@ -18,10 +18,10 @@ import androidx.core.content.ContextCompat
 import androidx.core.graphics.ColorUtils
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.fragment.app.Fragment
-import com.exory550.appthemehelper.ThemeStore
-import com.exory550.appthemehelper.util.ATHUtil
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.util.ATHUtil
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.util.PreferenceUtil.materialYou
 import com.google.android.material.button.MaterialButton

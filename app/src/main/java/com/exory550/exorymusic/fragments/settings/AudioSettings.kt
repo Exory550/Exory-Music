@@ -7,7 +7,7 @@ import android.media.audiofx.AudioEffect
 import android.os.Bundle
 import androidx.core.app.ActivityCompat
 import androidx.preference.Preference
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.BLUETOOTH_PLAYBACK
 import com.exory550.exorymusic.EQUALIZER
 import com.exory550.exorymusic.R

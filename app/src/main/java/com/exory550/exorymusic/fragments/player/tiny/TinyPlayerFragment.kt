@@ -11,8 +11,8 @@ import android.view.View
 import android.view.animation.LinearInterpolator
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.getSystemService
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentTinyPlayerBinding
 import com.exory550.exorymusic.extensions.*

@@ -5,7 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
 import androidx.preference.Preference
-import com.exory550.appthemehelper.common.prefs.supportv7.ATEListPreference
+import code.name.exory550.appthemehelper.common.prefs.supportv7.ATEListPreference
 import com.exory550.exorymusic.LANGUAGE_NAME
 import com.exory550.exorymusic.LAST_ADDED_CUTOFF
 import com.exory550.exorymusic.R

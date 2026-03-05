@@ -11,7 +11,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentActivity
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.ThemeStore
 import com.exory550.exorymusic.*
 import com.exory550.exorymusic.adapter.base.MediaEntryViewHolder
 import com.exory550.exorymusic.db.PlaylistWithSongs

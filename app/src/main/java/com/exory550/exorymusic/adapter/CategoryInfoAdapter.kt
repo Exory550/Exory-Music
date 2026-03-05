@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.exory550.appthemehelper.ThemeStore.Companion.accentColor
+import code.name.exory550.appthemehelper.ThemeStore.Companion.accentColor
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.PreferenceDialogLibraryCategoriesListitemBinding
 import com.exory550.exorymusic.extensions.showToast

@@ -5,8 +5,8 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
-import com.exory550.appthemehelper.ThemeStore
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.appshortcuts.DynamicShortcutManager
 import com.exory550.exorymusic.databinding.FragmentSettingsBinding

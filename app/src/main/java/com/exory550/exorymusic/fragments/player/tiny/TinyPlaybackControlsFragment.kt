@@ -3,7 +3,7 @@ package com.exory550.exorymusic.fragments.player.tiny
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
-import com.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.ColorUtil
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentTinyControlsFragmentBinding
 import com.exory550.exorymusic.fragments.base.AbsPlayerControlsFragment

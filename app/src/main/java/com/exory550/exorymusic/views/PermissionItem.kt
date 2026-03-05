@@ -6,8 +6,8 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.FrameLayout
 import androidx.core.content.withStyledAttributes
-import com.exory550.appthemehelper.ThemeStore
-import com.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.util.ColorUtil
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.ItemPermissionBinding
 import com.exory550.exorymusic.extensions.accentOutlineColor

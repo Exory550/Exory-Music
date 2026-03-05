@@ -19,9 +19,9 @@ import androidx.loader.content.Loader
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.exory550.appthemehelper.ThemeStore.Companion.accentColor
-import com.exory550.appthemehelper.common.ATHToolbarActivity
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.ThemeStore.Companion.accentColor
+import code.name.exory550.appthemehelper.common.ATHToolbarActivity
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.adapter.SongFileAdapter
 import com.exory550.exorymusic.adapter.Storage

@@ -9,9 +9,9 @@ import android.widget.ProgressBar
 import android.widget.SeekBar
 import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat.SRC_IN
-import com.exory550.appthemehelper.util.ATHUtil
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.ATHUtil
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
 
 object ViewUtil {
 

@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.core.content.getSystemService
 import androidx.core.net.toUri
-import com.exory550.appthemehelper.util.TintHelper
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.util.TintHelper
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.activities.base.AbsThemeActivity
 import com.exory550.exorymusic.activities.bugreport.model.DeviceInfo

@@ -35,8 +35,8 @@ public class SAFGuideActivity extends IntroActivity {
                     ? R.string.saf_guide_slide1_description_before_o
                     : R.string.saf_guide_slide1_description)
             .image(R.drawable.saf_guide_1)
-            .background(com.exory550.appthemehelper.R.color.md_deep_purple_300)
-            .backgroundDark(com.exory550.appthemehelper.R.color.md_deep_purple_400)
+            .background(code.name.exory550.appthemehelper.R.color.md_deep_purple_300)
+            .backgroundDark(code.name.exory550.appthemehelper.R.color.md_deep_purple_400)
             .layout(R.layout.fragment_simple_slide_large_image)
             .build());
     addSlide(
@@ -44,8 +44,8 @@ public class SAFGuideActivity extends IntroActivity {
             .title(R.string.saf_guide_slide2_title)
             .description(R.string.saf_guide_slide2_description)
             .image(R.drawable.saf_guide_2)
-            .background(com.exory550.appthemehelper.R.color.md_deep_purple_500)
-            .backgroundDark(com.exory550.appthemehelper.R.color.md_deep_purple_600)
+            .background(code.name.exory550.appthemehelper.R.color.md_deep_purple_500)
+            .backgroundDark(code.name.exory550.appthemehelper.R.color.md_deep_purple_600)
             .layout(R.layout.fragment_simple_slide_large_image)
             .build());
     addSlide(
@@ -53,8 +53,8 @@ public class SAFGuideActivity extends IntroActivity {
             .title(R.string.saf_guide_slide3_title)
             .description(R.string.saf_guide_slide3_description)
             .image(R.drawable.saf_guide_3)
-            .background(com.exory550.appthemehelper.R.color.md_deep_purple_700)
-            .backgroundDark(com.exory550.appthemehelper.R.color.md_deep_purple_800)
+            .background(code.name.exory550.appthemehelper.R.color.md_deep_purple_700)
+            .backgroundDark(code.name.exory550.appthemehelper.R.color.md_deep_purple_800)
             .layout(R.layout.fragment_simple_slide_large_image)
             .build());
   }

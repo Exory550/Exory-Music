@@ -17,8 +17,8 @@ import androidx.palette.graphics.Palette;
 
 import java.util.List;
 
-import com.exory550.appthemehelper.util.ATHUtil;
-import com.exory550.appthemehelper.util.ColorUtil;
+import code.name.exory550.appthemehelper.util.ATHUtil;
+import code.name.exory550.appthemehelper.util.ColorUtil;
 
 public class MediaNotificationProcessor {
 

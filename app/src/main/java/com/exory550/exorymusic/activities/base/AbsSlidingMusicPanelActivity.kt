@@ -16,7 +16,7 @@ import androidx.activity.OnBackPressedCallback
 import androidx.core.animation.doOnEnd
 import androidx.core.view.*
 import androidx.fragment.app.commit
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.ADAPTIVE_COLOR_APP
 import com.exory550.exorymusic.ALBUM_COVER_STYLE
 import com.exory550.exorymusic.ALBUM_COVER_TRANSFORM

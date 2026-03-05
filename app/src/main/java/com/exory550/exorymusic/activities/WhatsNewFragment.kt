@@ -14,10 +14,10 @@ import android.webkit.WebViewClient
 import androidx.core.content.pm.PackageInfoCompat
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.FragmentActivity
-import com.exory550.appthemehelper.util.ATHUtil.isWindowBackgroundDark
-import com.exory550.appthemehelper.util.ColorUtil.isColorLight
-import com.exory550.appthemehelper.util.ColorUtil.lightenColor
-import com.exory550.appthemehelper.util.MaterialValueHelper.getPrimaryTextColor
+import code.name.exory550.appthemehelper.util.ATHUtil.isWindowBackgroundDark
+import code.name.exory550.appthemehelper.util.ColorUtil.isColorLight
+import code.name.exory550.appthemehelper.util.ColorUtil.lightenColor
+import code.name.exory550.appthemehelper.util.MaterialValueHelper.getPrimaryTextColor
 import com.exory550.exorymusic.BuildConfig
 import com.exory550.exorymusic.Constants
 import com.exory550.exorymusic.databinding.FragmentWhatsNewBinding

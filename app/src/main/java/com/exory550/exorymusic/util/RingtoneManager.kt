@@ -6,7 +6,7 @@ import android.provider.BaseColumns
 import android.provider.MediaStore
 import android.provider.Settings
 import androidx.core.net.toUri
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.extensions.showToast
 import com.exory550.exorymusic.model.Song

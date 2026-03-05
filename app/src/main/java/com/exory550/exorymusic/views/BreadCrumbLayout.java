@@ -22,7 +22,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import com.exory550.appthemehelper.util.ATHUtil;
+import code.name.exory550.appthemehelper.util.ATHUtil;
 import com.exory550.exorymusic.R;
 
 public class BreadCrumbLayout extends HorizontalScrollView implements View.OnClickListener {

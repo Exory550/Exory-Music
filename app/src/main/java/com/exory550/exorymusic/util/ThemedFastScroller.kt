@@ -1,10 +1,10 @@
 package com.exory550.exorymusic.util
 
 import android.view.ViewGroup
-import com.exory550.appthemehelper.ThemeStore.Companion.accentColor
-import com.exory550.appthemehelper.util.ColorUtil.isColorLight
-import com.exory550.appthemehelper.util.MaterialValueHelper.getPrimaryTextColor
-import com.exory550.appthemehelper.util.TintHelper
+import code.name.exory550.appthemehelper.ThemeStore.Companion.accentColor
+import code.name.exory550.appthemehelper.util.ColorUtil.isColorLight
+import code.name.exory550.appthemehelper.util.MaterialValueHelper.getPrimaryTextColor
+import code.name.exory550.appthemehelper.util.TintHelper
 import com.exory550.exorymusic.views.PopupBackground
 import me.zhanghai.android.fastscroll.FastScroller
 import me.zhanghai.android.fastscroll.FastScrollerBuilder

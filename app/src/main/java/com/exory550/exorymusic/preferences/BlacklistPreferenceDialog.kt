@@ -9,7 +9,7 @@ import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat.SRC_IN
 import androidx.core.text.parseAsHtml
 import androidx.fragment.app.DialogFragment
-import com.exory550.appthemehelper.common.prefs.supportv7.ATEDialogPreference
+import code.name.exory550.appthemehelper.common.prefs.supportv7.ATEDialogPreference
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.dialogs.BlacklistFolderChooserDialog
 import com.exory550.exorymusic.extensions.accentTextColor

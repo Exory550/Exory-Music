@@ -7,9 +7,9 @@ import android.view.animation.DecelerateInterpolator
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.MaterialValueHelper
-import com.exory550.appthemehelper.util.TintHelper
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.TintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentBlurPlayerPlaybackControlsBinding
 import com.exory550.exorymusic.extensions.applyColor
@@ -104,7 +104,7 @@ class BlurPlaybackControlsFragment :
     override fun setColor(color: MediaNotificationProcessor) {
         lastPlaybackControlsColor = Color.WHITE
         lastDisabledPlaybackControlsColor =
-            ContextCompat.getColor(requireContext(), com.exory550.appthemehelper.R.color.md_grey_500)
+            ContextCompat.getColor(requireContext(), code.name.exory550.appthemehelper.R.color.md_grey_500)
 
         binding.title.setTextColor(lastPlaybackControlsColor)
 

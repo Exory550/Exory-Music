@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.RemoteViews
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.activities.MainActivity
 import com.exory550.exorymusic.appwidgets.base.BaseAppWidget
@@ -26,29 +26,29 @@ class AppWidgetText : BaseAppWidget() {
         appWidgetView.setImageViewBitmap(
             R.id.button_next,
             context.getTintedDrawable(R.drawable.ic_skip_next, ContextCompat.getColor(
-                context, com.exory550.appthemehelper.R.color.md_white_1000
+                context, code.name.exory550.appthemehelper.R.color.md_white_1000
             )).toBitmap()
         )
         appWidgetView.setImageViewBitmap(
             R.id.button_prev,
             context.getTintedDrawable(R.drawable.ic_skip_previous, ContextCompat.getColor(
-                context, com.exory550.appthemehelper.R.color.md_white_1000
+                context, code.name.exory550.appthemehelper.R.color.md_white_1000
             )
             ).toBitmap()
         )
         appWidgetView.setImageViewBitmap(
             R.id.button_toggle_play_pause,
             context.getTintedDrawable(R.drawable.ic_play_arrow_white_32dp, ContextCompat.getColor(
-                context, com.exory550.appthemehelper.R.color.md_white_1000
+                context, code.name.exory550.appthemehelper.R.color.md_white_1000
             )
             ).toBitmap()
         )
 
         appWidgetView.setTextColor(
-            R.id.title, ContextCompat.getColor(context, com.exory550.appthemehelper.R.color.md_white_1000)
+            R.id.title, ContextCompat.getColor(context, code.name.exory550.appthemehelper.R.color.md_white_1000)
         )
         appWidgetView.setTextColor(
-            R.id.text, ContextCompat.getColor(context, com.exory550.appthemehelper.R.color.md_white_1000)
+            R.id.text, ContextCompat.getColor(context, code.name.exory550.appthemehelper.R.color.md_white_1000)
         )
 
         linkButtons(context, appWidgetView)
@@ -103,7 +103,7 @@ class AppWidgetText : BaseAppWidget() {
         appWidgetView.setImageViewBitmap(
             R.id.button_toggle_play_pause,
             service.getTintedDrawable(playPauseRes, ContextCompat.getColor(
-                service, com.exory550.appthemehelper.R.color.md_white_1000)
+                service, code.name.exory550.appthemehelper.R.color.md_white_1000)
             ).toBitmap()
         )
         appWidgetView.setImageViewBitmap(
@@ -112,7 +112,7 @@ class AppWidgetText : BaseAppWidget() {
                 R.drawable.ic_skip_next,
                 ContextCompat.getColor(
                     service,
-                    com.exory550.appthemehelper.R.color.md_white_1000
+                    code.name.exory550.appthemehelper.R.color.md_white_1000
                 )
             ).toBitmap()
         )
@@ -121,7 +121,7 @@ class AppWidgetText : BaseAppWidget() {
             service.getTintedDrawable(
                 R.drawable.ic_skip_previous,
                 ContextCompat.getColor(
-                    service, com.exory550.appthemehelper.R.color.md_white_1000
+                    service, code.name.exory550.appthemehelper.R.color.md_white_1000
                 )
             ).toBitmap()
         )

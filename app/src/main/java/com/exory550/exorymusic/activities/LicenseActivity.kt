@@ -3,9 +3,9 @@ package com.exory550.exorymusic.activities
 import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
-import com.exory550.appthemehelper.util.ATHUtil.isWindowBackgroundDark
-import com.exory550.appthemehelper.util.ColorUtil.lightenColor
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.util.ATHUtil.isWindowBackgroundDark
+import code.name.exory550.appthemehelper.util.ColorUtil.lightenColor
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.exory550.exorymusic.activities.base.AbsThemeActivity
 import com.exory550.exorymusic.databinding.ActivityLicenseBinding
 import com.exory550.exorymusic.extensions.accentColor

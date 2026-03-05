@@ -4,7 +4,7 @@ import android.app.KeyguardManager
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.core.content.getSystemService
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.activities.base.AbsMusicServiceActivity
 import com.exory550.exorymusic.databinding.ActivityLockScreenBinding

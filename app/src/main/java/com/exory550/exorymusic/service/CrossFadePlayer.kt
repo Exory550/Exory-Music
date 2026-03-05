@@ -5,7 +5,7 @@ import android.content.Context
 import android.media.MediaPlayer
 import android.media.PlaybackParams
 import android.os.PowerManager
-import com.exory550.appthemehelper.util.VersionUtils.hasMarshmallow
+import code.name.exory550.appthemehelper.util.VersionUtils.hasMarshmallow
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.extensions.showToast
 import com.exory550.exorymusic.extensions.uri

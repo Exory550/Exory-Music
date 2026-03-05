@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
-import com.exory550.appthemehelper.util.ATHUtil
-import com.exory550.appthemehelper.util.MaterialValueHelper
-import com.exory550.appthemehelper.util.TintHelper
+import code.name.exory550.appthemehelper.util.ATHUtil
+import code.name.exory550.appthemehelper.util.MaterialValueHelper
+import code.name.exory550.appthemehelper.util.TintHelper
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentPeekControlPlayerBinding
 import com.exory550.exorymusic.extensions.accentColor

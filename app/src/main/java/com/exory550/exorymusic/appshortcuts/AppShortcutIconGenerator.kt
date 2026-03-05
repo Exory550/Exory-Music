@@ -7,7 +7,7 @@ import android.os.Build
 import android.util.TypedValue
 import androidx.annotation.RequiresApi
 import androidx.core.graphics.drawable.toBitmap
-import com.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.ThemeStore
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.extensions.getTintedDrawable
 import com.exory550.exorymusic.util.PreferenceUtil

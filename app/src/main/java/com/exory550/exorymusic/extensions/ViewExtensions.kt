@@ -19,8 +19,8 @@ import androidx.core.animation.doOnEnd
 import androidx.core.animation.doOnStart
 import androidx.core.content.getSystemService
 import androidx.core.view.*
-import com.exory550.appthemehelper.ThemeStore
-import com.exory550.appthemehelper.util.TintHelper
+import code.name.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.util.TintHelper
 import com.exory550.exorymusic.util.PreferenceUtil
 import com.exory550.exorymusic.util.RetroUtil
 import com.google.android.material.bottomnavigation.BottomNavigationView

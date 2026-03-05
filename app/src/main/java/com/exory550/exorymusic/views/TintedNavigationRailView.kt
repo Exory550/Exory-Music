@@ -3,7 +3,7 @@ package com.exory550.exorymusic.views
 import android.content.Context
 import android.content.res.ColorStateList
 import android.util.AttributeSet
-import com.exory550.appthemehelper.util.ATHUtil
+import code.name.exory550.appthemehelper.util.ATHUtil
 import com.exory550.exorymusic.extensions.accentColor
 import com.exory550.exorymusic.extensions.addAlpha
 import com.exory550.exorymusic.extensions.setItemColors

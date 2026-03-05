@@ -4,8 +4,8 @@ import android.app.WallpaperManager
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
-import com.exory550.appthemehelper.ThemeStore
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.ThemeStore
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.util.PreferenceUtil
 
 class WallpaperAccentManager(val context: Context) {

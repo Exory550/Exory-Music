@@ -12,7 +12,7 @@ import androidx.core.graphics.BlendModeCompat.SRC_IN
 import androidx.fragment.app.DialogFragment
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.exory550.appthemehelper.common.prefs.supportv7.ATEDialogPreference
+import code.name.exory550.appthemehelper.common.prefs.supportv7.ATEDialogPreference
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.PreferenceNowPlayingScreenItemBinding
 import com.exory550.exorymusic.extensions.colorButtons

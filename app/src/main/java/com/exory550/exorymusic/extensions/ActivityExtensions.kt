@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.DimenRes
 import androidx.appcompat.app.AppCompatActivity
-import com.exory550.appthemehelper.util.ToolbarContentTintHelper
+import code.name.exory550.appthemehelper.util.ToolbarContentTintHelper
 import com.google.android.material.appbar.MaterialToolbar
 
 fun AppCompatActivity.applyToolbar(toolbar: MaterialToolbar) {

@@ -12,8 +12,8 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.widget.PopupMenu
 import androidx.lifecycle.lifecycleScope
-import com.exory550.appthemehelper.util.ColorUtil
-import com.exory550.appthemehelper.util.VersionUtils
+import code.name.exory550.appthemehelper.util.ColorUtil
+import code.name.exory550.appthemehelper.util.VersionUtils
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.databinding.FragmentFullPlayerControlsBinding
 import com.exory550.exorymusic.db.PlaylistEntity
