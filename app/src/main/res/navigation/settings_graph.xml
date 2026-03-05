@@ -19,8 +19,8 @@
             app:popExitAnim="@anim/exory_music_fragment_close_exit" />
 
         <action
-            android:id="@+id/action_mainSettingsFragment_to_imageSettingFragment"
-            app:destination="@id/imageSettingFragment"
+            android:id="@+id/action_mainSettingsFragment_to_imageSettingsFragment"
+            app:destination="@id/imageSettingsFragment"
             app:enterAnim="@anim/exory_music_fragment_open_enter"
             app:exitAnim="@anim/exory_music_fragment_open_exit"
             app:popEnterAnim="@anim/exory_music_fragment_close_enter"
@@ -91,7 +91,7 @@
         android:label="Audio" />
 
     <fragment
-        android:id="@+id/imageSettingFragment"
+        android:id="@+id/imageSettingsFragment"
         android:name="com.exory550.exorymusic.fragments.settings.ImageSettingFragment"
         android:label="Image" />
 

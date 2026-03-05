@@ -1,3 +1,5 @@
+package code.name.exory550.appthemehelper
+
 import android.graphics.Color.parseColor
 
 val PRIMARY_COLORS = intArrayOf(
