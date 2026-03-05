@@ -2,7 +2,7 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.exory550.exorymusic.preferences.BlacklistPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.BlacklistPreference
         android:key="blacklist"
         android:layout="@layout/list_item_view"
         android:summary="@string/pref_summary_blacklist"
@@ -16,11 +16,11 @@
         android:summary="@string/pref_summary_whitelist"
         android:title="@string/pref_title_whitelist" />
 
-    <com.exory550.exorymusic.preferences.ATEPreferenceCategory
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory
         android:layout="@layout/preference_category_title"
         android:title="@string/pref_header_playlists">
 
-        <com.exory550.exorymusic.preferences.ATEListPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATEListPreference
             android:defaultValue="this_month"
             android:entries="@array/pref_playlists_last_added_interval_titles"
             android:entryValues="@array/pref_playlists_last_added_interval_values"
@@ -31,12 +31,12 @@
             android:title="@string/pref_title_last_added_interval"
             app:icon="@drawable/ic_playlist_add" />
 
-    </com.exory550.exorymusic.preferences.ATEPreferenceCategory>
-    <com.exory550.exorymusic.preferences.ATEPreferenceCategory
+    </code.name.exory550.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory>
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory
         android:layout="@layout/preference_category_title"
         android:title="@string/pref_header_advanced">
 
-        <com.exory550.exorymusic.preferences.ATESeekBarPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESeekBarPreference
             android:defaultValue="30"
             android:key="filter_song"
             android:layout="@layout/list_item_view_seekbar"
@@ -63,8 +63,8 @@
             app:icon="@drawable/ic_settings_brightness" />
 
 
-    </com.exory550.exorymusic.preferences.ATEPreferenceCategory>
-    <com.exory550.exorymusic.preferences.ATEListPreference
+    </code.name.exory550.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory>
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATEListPreference
         android:defaultValue="auto"
         android:entries="@array/pref_language_names"
         android:entryValues="@array/pref_language_codes"

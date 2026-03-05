@@ -2,7 +2,7 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.exory550.exorymusic.preferences.DurationPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.DurationPreference
         android:defaultValue="0"
         android:key="audio_fade_duration"
         android:layout="@layout/list_item_view"
@@ -16,7 +16,7 @@
         android:summary="@string/pref_summary_manage_audio_focus"
         android:title="@string/pref_title_manage_audio_focus" />
 
-    <com.exory550.exorymusic.preferences.ATESeekBarPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESeekBarPreference
         android:defaultValue="0"
         android:key="cross_fade_duration"
         android:layout="@layout/list_item_view_seekbar"
@@ -33,7 +33,7 @@
         android:summary="@string/pref_summary_gapless_playback"
         android:title="@string/pref_title_gapless_playback" />
 
-    <com.exory550.exorymusic.preferences.ATEPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATEPreference
         android:key="equalizer"
         android:layout="@layout/list_item_view_no_title"
         android:title="@string/equalizer"
