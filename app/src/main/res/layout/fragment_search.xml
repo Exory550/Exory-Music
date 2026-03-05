@@ -130,7 +130,7 @@
         </HorizontalScrollView>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <code.name.exory550.exorymusic.views.insets.InsetsRecyclerView
+    <com.exory550.exorymusic.views.insets.InsetsRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

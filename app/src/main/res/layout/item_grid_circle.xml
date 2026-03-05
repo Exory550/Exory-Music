@@ -9,7 +9,7 @@
     android:padding="4dp"
     tools:ignore="MissingPrefix">
 
-    <code.name.exory550.exorymusic.views.ExoryShapeableImageView
+    <com.exory550.exorymusic.views.ExoryShapeableImageView
         android:id="@+id/image"
         android:layout_width="0dp"
         android:layout_height="0dp"

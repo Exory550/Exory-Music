@@ -15,7 +15,7 @@
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         app:navGraph="@navigation/settings_graph" />
 
-    <code.name.exory550.exorymusic.views.TopAppBarLayout
+    <com.exory550.exorymusic.views.TopAppBarLayout
         android:id="@+id/appBarLayout"
         style="?appBarLayoutStyle"
         android:layout_width="match_parent"

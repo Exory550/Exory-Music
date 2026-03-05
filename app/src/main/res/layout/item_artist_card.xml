@@ -13,7 +13,7 @@
         android:background="@drawable/artist_card_gradient_effect"
         tools:backgroundTint="@color/md_red_500">
 
-        <code.name.exory550.exorymusic.views.ExoryShapeableImageView
+        <com.exory550.exorymusic.views.ExoryShapeableImageView
             android:id="@+id/image"
             android:layout_width="42dp"
             android:layout_height="42dp"

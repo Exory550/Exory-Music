@@ -15,7 +15,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/cover_lyrics"
-        android:name="code.name.exory550.exorymusic.fragments.player.CoverLyricsFragment"
+        android:name="com.exory550.exorymusic.fragments.player.CoverLyricsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical" />
@@ -28,7 +28,7 @@
         app:fel_size_bottom="100dp"
         app:fel_size_top="100dp">
 
-        <code.name.exory550.exorymusic.lyrics.CoverLrcView
+        <com.exory550.exorymusic.lyrics.CoverLrcView
             android:id="@+id/lyricsView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

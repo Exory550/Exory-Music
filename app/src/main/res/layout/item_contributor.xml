@@ -11,7 +11,7 @@
     android:paddingEnd="12dp"
     tools:ignore="PrivateResource">
 
-    <code.name.exory550.exorymusic.views.ExoryShapeableImageView
+    <com.exory550.exorymusic.views.ExoryShapeableImageView
         android:id="@+id/icon"
         android:layout_width="42dp"
         android:layout_height="42dp"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toEndOf="@+id/icon"
         tools:text="@tools:sample/full_names" />
 
-    <code.name.exory550.exorymusic.views.BaselineGridTextView
+    <com.exory550.exorymusic.views.BaselineGridTextView
         android:id="@+id/text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

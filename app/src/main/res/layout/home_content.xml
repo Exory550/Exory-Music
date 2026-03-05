@@ -20,7 +20,7 @@
             android:id="@+id/suggestions"
             layout="@layout/item_suggestions" />
 
-        <code.name.exory550.exorymusic.views.insets.InsetsRecyclerView
+        <com.exory550.exorymusic.views.insets.InsetsRecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
