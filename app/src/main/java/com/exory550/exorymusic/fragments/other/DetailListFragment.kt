@@ -243,7 +243,7 @@ class DetailListFragment : AbsMainActivityFragment(R.layout.fragment_playlist_de
 
                     val snackBar =
                         Snackbar.make(
-                            binding.container,
+                            binding.root,
                             getString(R.string.history_cleared),
                             Snackbar.LENGTH_LONG
                         )

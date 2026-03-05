@@ -41,7 +41,7 @@ class GenreDetailsFragment : AbsMainActivityFragment(R.layout.fragment_playlist_
         _binding = FragmentPlaylistDetailNewBinding.bind(view)
         mainActivity.addMusicServiceEventListener(detailsViewModel)
         mainActivity.setSupportActionBar(binding.toolbar)
-        binding.container.transitionName = "genre"
+        binding.root.transitionName = "genre"
         genre = arguments.extraGenre
         binding.toolbar.title = arguments.extraGenre.name
         setupRecyclerView()
