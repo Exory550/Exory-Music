@@ -16,12 +16,12 @@
             android:title="@string/pref_title_general_theme"
             app:icon="@drawable/ic_palette_outline" />
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:key="black_theme"
             android:layout="@layout/list_item_view_switch_no_title"
             android:title="@string/black_theme_name" />
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:defaultValue="@bool/md3_enabled"
             android:disableDependentsState="true"
             android:key="material_you"
@@ -29,7 +29,7 @@
             android:title="@string/pref_title_md3"
             app:isPreferenceVisible="@bool/md3_available" />
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:defaultValue="false"
             android:key="custom_font"
             android:layout="@layout/list_item_view_switch_no_title"
@@ -42,7 +42,7 @@
         android:layout="@layout/preference_category_title"
         android:title="@string/colors">
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:defaultValue="false"
             android:key="wallpaper_accent"
             android:layout="@layout/list_item_view_switch"
@@ -58,7 +58,7 @@
             android:title="@string/accent_color"
             app:icon="@drawable/ic_colorize" />
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:defaultValue="false"
             android:dependency="material_you"
             android:key="desaturated_color"
@@ -66,14 +66,14 @@
             android:summary="@string/pref_summary_desaturated_color"
             android:title="@string/pref_title_desaturated_color" />
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:defaultValue="false"
             android:key="adaptive_color_app"
             android:layout="@layout/list_item_view_switch"
             android:summary="@string/pref_summary_colored_app"
             android:title="@string/pref_title_colored_app" />
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:defaultValue="false"
             android:dependency="material_you"
             android:key="should_color_app_shortcuts"

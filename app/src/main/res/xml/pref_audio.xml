@@ -9,7 +9,7 @@
         android:summary="@string/pref_summary_audio_fade"
         android:title="@string/pref_title_audio_fade" />
 
-    <com.exory550.exorymusic.preferences.ATESwitchPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
         android:defaultValue="false"
         android:key="manage_audio_focus"
         android:layout="@layout/list_item_view_switch"
@@ -26,7 +26,7 @@
         android:title="@string/pref_title_cross_fade"
         app:showSeekBarValue="true" />
 
-    <com.exory550.exorymusic.preferences.ATESwitchPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
         android:defaultValue="false"
         android:key="gapless_playback"
         android:layout="@layout/list_item_view_switch"
@@ -39,7 +39,7 @@
         android:title="@string/equalizer"
         app:icon="@drawable/ic_equalizer" />
 
-    <com.exory550.exorymusic.preferences.ATESwitchPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
         android:defaultValue="false"
         android:key="toggle_headset"
         android:layout="@layout/list_item_view_switch"
@@ -47,7 +47,7 @@
         android:title="@string/pref_title_toggle_toggle_headset"
         app:icon="@drawable/ic_play_arrow" />
 
-    <com.exory550.exorymusic.preferences.ATESwitchPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
         android:defaultValue="false"
         android:key="bluetooth_playback"
         android:layout="@layout/list_item_view_switch"

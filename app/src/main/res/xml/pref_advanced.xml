@@ -9,7 +9,7 @@
         android:title="@string/pref_header_blacklist"
         app:icon="@drawable/ic_music_note_off" />
 
-    <com.exory550.exorymusic.preferences.ATESwitchPreference
+    <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
         android:defaultValue="false"
         android:key="whitelist_music"
         android:layout="@layout/list_item_view_switch"
@@ -46,7 +46,7 @@
             app:icon="@drawable/ic_filter_song"
             app:showSeekBarValue="true" />
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:defaultValue="false"
             android:key="pause_on_zero_volume"
             android:layout="@layout/list_item_view_switch"
@@ -54,7 +54,7 @@
             android:title="@string/pref_keep_pause_on_zero_volume_title"
             app:icon="@drawable/ic_pause" />
 
-        <com.exory550.exorymusic.preferences.ATESwitchPreference
+        <code.name.exory550.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:defaultValue="false"
             android:key="keep_screen_on"
             android:layout="@layout/list_item_view_switch"
