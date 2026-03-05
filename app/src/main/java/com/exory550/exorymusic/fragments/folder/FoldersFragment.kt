@@ -461,7 +461,7 @@ class FoldersFragment : AbsMainActivityFragment(R.layout.fragment_folder),
 
     private fun setUpRecyclerView() {
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        FastScrollerBuilder(binding.recyclerView).useMd2Style().build()
+        // fastscroller removed
     }
 
     private fun updateAdapter(files: List<File>) {
