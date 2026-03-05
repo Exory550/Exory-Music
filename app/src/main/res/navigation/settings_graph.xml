@@ -92,7 +92,7 @@
 
     <fragment
         android:id="@+id/imageSettingsFragment"
-        android:name="com.exory550.exorymusic.fragments.settings.ImageSettingFragment"
+        android:name="com.exory550.exorymusic.fragments.settings.ImageSettingsFragment"
         android:label="Image" />
 
     <fragment
