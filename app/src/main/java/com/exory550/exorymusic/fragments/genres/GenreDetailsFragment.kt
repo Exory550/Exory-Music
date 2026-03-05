@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.exory550.exorymusic.R
 import com.exory550.exorymusic.adapter.song.SongAdapter
-import com.exory550.exorymusic.databinding.FragmentPlaylistDetailBinding
+import com.exory550.exorymusic.databinding.FragmentPlaylistDetailNewBinding
 import com.exory550.exorymusic.extensions.dipToPix
 import com.exory550.exorymusic.fragments.base.AbsMainActivityFragment
 import com.exory550.exorymusic.helper.menu.GenreMenuHelper
@@ -24,21 +24,21 @@ import com.google.android.material.transition.MaterialSharedAxis
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
 
-class GenreDetailsFragment : AbsMainActivityFragment(R.layout.fragment_playlist_detail) {
+class GenreDetailsFragment : AbsMainActivityFragment(R.layout.fragment_playlist_detail_new) {
     private val arguments by navArgs<GenreDetailsFragmentArgs>()
     private val detailsViewModel: GenreDetailsViewModel by viewModel {
         parametersOf(arguments.extraGenre)
     }
     private lateinit var genre: Genre
     private lateinit var songAdapter: SongAdapter
-    private var _binding: FragmentPlaylistDetailBinding? = null
+    private var _binding: FragmentPlaylistDetailNewBinding? = null
     private val binding get() = _binding!!
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         enterTransition = MaterialSharedAxis(MaterialSharedAxis.Z, true).addTarget(view)
         returnTransition = MaterialSharedAxis(MaterialSharedAxis.Z, false)
-        _binding = FragmentPlaylistDetailBinding.bind(view)
+        _binding = FragmentPlaylistDetailNewBinding.bind(view)
         mainActivity.addMusicServiceEventListener(detailsViewModel)
         mainActivity.setSupportActionBar(binding.toolbar)
         binding.container.transitionName = "genre"

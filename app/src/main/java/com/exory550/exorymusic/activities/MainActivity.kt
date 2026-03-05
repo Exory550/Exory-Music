@@ -195,3 +195,17 @@ class MainActivity : AbsSlidingMusicPanelActivity() {
         return id
     }
 }
+
+fun keepScreenOn(keepScreenOn: Boolean) {
+    if (keepScreenOn) {
+        window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+    } else {
+        window.clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+    }
+}
+
+fun currentFragment(navHostId: Int): androidx.fragment.app.Fragment? {
+    val navHostFragment = supportFragmentManager.findFragmentById(navHostId) as? androidx.navigation.fragment.NavHostFragment
+    return navHostFragment?.childFragmentManager?.fragments?.firstOrNull()
+}
+}
