@@ -112,22 +112,22 @@
   <meta name="route-pattern" content="/:user_id/:repository/raw/*name(/*path)" data-turbo-transient>
   <meta name="route-controller" content="blob" data-turbo-transient>
   <meta name="route-action" content="raw" data-turbo-transient>
-  <meta name="fetch-nonce" content="v2:c17b5048-0007-0608-6a0e-57412a72af0e">
+  <meta name="fetch-nonce" content="v2:6c1fd366-e792-0672-ad71-ede2970300f9">
 
     
   <meta name="current-catalog-service-hash" content="f3abb0cc802f3d7b95fc8762b94bdcb13bf39634c40c357301c4aa1d67a256fb">
 
 
-  <meta name="request-id" content="6601:DD5F9:5102D0:61DA10:69A8D8AB" data-turbo-transient="true" /><meta name="html-safe-nonce" content="ebc2a33d91fa31b25361e4b3489f0d589cffb53671a16c15f5ea48b04680962a" data-turbo-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6IjY2MDE6REQ1Rjk6NTEwMkQwOjYxREExMDo2OUE4RDhBQiIsInZpc2l0b3JfaWQiOiIzMjkxMDIyMTk3MDI1OTg2NzMxIiwicmVnaW9uX2VkZ2UiOiJzb3V0aGVhc3Rhc2lhIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-turbo-transient="true" /><meta name="visitor-hmac" content="1a7fdbb11633c6acc3f3a8051ea0a42cd8e64da841e827e4fc08acd2ccbb8f42" data-turbo-transient="true" />
+  <meta name="request-id" content="79E5:25E8F5:537702:64B27C:69A8DB7F" data-turbo-transient="true" /><meta name="html-safe-nonce" content="1d0daf2e7a9386dc31a1c3dfc3436da0df8f4f8aa33e35efb81b9d76cc0b0ddf" data-turbo-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6Ijc5RTU6MjVFOEY1OjUzNzcwMjo2NEIyN0M6NjlBOERCN0YiLCJ2aXNpdG9yX2lkIjoiMzY4MDk4Mjk0OTUwNzQyMzEwMyIsInJlZ2lvbl9lZGdlIjoic291dGhlYXN0YXNpYSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-turbo-transient="true" /><meta name="visitor-hmac" content="dd80678d668a0cdc969777a90dc01808c42f0153a288bdf4ccaeae1aaf03cd62" data-turbo-transient="true" />
 
 
-    <meta name="hovercard-subject-tag" content="repository:30675533" data-turbo-transient>
+    <meta name="hovercard-subject-tag" content="repository:142573775" data-turbo-transient>
 
 
   <meta name="github-keyboard-shortcuts" content="copilot" data-turbo-transient="true" />
   
 
-  <meta name="selected-link" value="/google/fonts/raw/main/ofl/googlesans/GoogleSans-Medium.ttf" data-turbo-transient>
+  <meta name="selected-link" value="/RetroMusicPlayer/RetroMusicPlayer/raw/dev/app/src/main/res/font/bold.ttf" data-turbo-transient>
   <link rel="assets" href="https://github.githubassets.com/">
 
     <meta name="google-site-verification" content="Apib7-x98H0j5cPqHWwSMm6dNU4GmODRoqxLiDzdx9I">
@@ -159,7 +159,7 @@
 
     <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
     <meta property="fb:app_id" content="1401488693436528">
-    <meta name="apple-itunes-app" content="app-id=1477376905, app-argument=https://github.com/google/fonts/raw/main/ofl/googlesans/GoogleSans-Medium.ttf" />
+    <meta name="apple-itunes-app" content="app-id=1477376905, app-argument=https://github.com/RetroMusicPlayer/RetroMusicPlayer/raw/dev/app/src/main/res/font/bold.ttf" />
 
       <meta property="og:url" content="https://github.com">
   <meta property="og:site_name" content="GitHub">
@@ -214,7 +214,7 @@
 
 
 
-      <link rel="canonical" href="https://github.com/google/fonts/raw/main/ofl/googlesans/GoogleSans-Medium.ttf" data-turbo-transient>
+      <link rel="canonical" href="https://github.com/RetroMusicPlayer/RetroMusicPlayer/raw/dev/app/src/main/res/font/bold.ttf" data-turbo-transient>
 
 
     <meta name="turbo-body-classes" content="logged-out env-production page-responsive min-height-full d-flex flex-column">
@@ -316,19 +316,19 @@
 
       <div class="d-flex flex-1 flex-order-2 text-right d-lg-none gap-2 flex-justify-end">
           <a
-            href="/login?return_to=https%3A%2F%2Fgithub.com%2Fgoogle%2Ffonts%2Fraw%2Fmain%2Fofl%2Fgooglesans%2FGoogleSans-Medium.ttf"
+            href="/login?return_to=https%3A%2F%2Fgithub.com%2FRetroMusicPlayer%2FRetroMusicPlayer%2Fraw%2Fdev%2Fapp%2Fsrc%2Fmain%2Fres%2Ffont%2Fbold.ttf"
             class="HeaderMenu-link HeaderMenu-button d-inline-flex f5 no-underline border color-border-default rounded-2 px-2 py-1 color-fg-inherit js-prevent-focus-on-mobile-nav"
-            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/fonts/raw/main/ofl/googlesans/GoogleSans-Medium.ttf&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="92520167159a78e3ad1bbe98c4f832e4c3d99d965d4eff6eeeaabd16e284c2d8"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/RetroMusicPlayer/RetroMusicPlayer/raw/dev/app/src/main/res/font/bold.ttf&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0ba6411238bd0df98ef8a88eb68cef2ab654b3dbba9247805497936f19381baa"
             data-analytics-event="{&quot;category&quot;:&quot;Marketing nav&quot;,&quot;action&quot;:&quot;click to Sign in&quot;,&quot;label&quot;:&quot;ref_page:Marketing;ref_cta:Sign in;ref_loc:Header&quot;}"
           >
             Sign in
           </a>
               <div class="AppHeader-appearanceSettings">
     <react-partial-anchor>
-      <button data-target="react-partial-anchor.anchor" id="icon-button-353e1031-50db-47b1-b3c9-c1c6da6a8475" aria-labelledby="tooltip-fa209987-f8ba-4ade-9fa5-35956ebe3b18" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
+      <button data-target="react-partial-anchor.anchor" id="icon-button-0d7066d5-bbd1-44b1-ab47-57ec81ee8f4a" aria-labelledby="tooltip-dc78d746-005c-49fc-97d9-721df2f6e063" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
     <path d="M15 2.75a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Zm-8.5.75v1.25a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0V2H1.75a.75.75 0 0 0 0 1.5H6.5Zm1.25 5.25a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5h6ZM15 8a.75.75 0 0 1-.75.75H11.5V10a.75.75 0 1 1-1.5 0V6a.75.75 0 0 1 1.5 0v1.25h2.75A.75.75 0 0 1 15 8Zm-9 5.25v-2a.75.75 0 0 0-1.5 0v1.25H1.75a.75.75 0 0 0 0 1.5H4.5v1.25a.75.75 0 0 0 1.5 0v-2Zm9 0a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Z"></path>
 </svg>
-</button><tool-tip id="tooltip-fa209987-f8ba-4ade-9fa5-35956ebe3b18" for="icon-button-353e1031-50db-47b1-b3c9-c1c6da6a8475" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
+</button><tool-tip id="tooltip-dc78d746-005c-49fc-97d9-721df2f6e063" for="icon-button-0d7066d5-bbd1-44b1-ab47-57ec81ee8f4a" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
 
       <template data-target="react-partial-anchor.template">
         <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.61b70c84b7035dae.module.css" />
@@ -376,7 +376,7 @@
                 
 
 
-<qbsearch-input class="search-input" data-scope="" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="tdZhEHi-UYNenGgaZjivhNZtfrNRYQysw-0ch3tUaa455pnNs2crvn8uCTXO5w00osgG8jX6jq7TIsP7FuoKaQ" data-max-custom-scopes="10" data-header-redesign-enabled="false" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="" data-current-org="" data-current-owner="" data-logged-in="false" data-copilot-chat-enabled="false" data-nl-search-enabled="false" data-retain-scroll-position="true">
+<qbsearch-input class="search-input" data-scope="" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="65ErMDOWZCydXH4CRKHC8vbAYon3bpd1AB-9KM3xrWm9wVUBnC5ZOn5yjy89C-JoB0P-65TEMKZobnoH7AxOzw" data-max-custom-scopes="10" data-header-redesign-enabled="false" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="" data-current-org="" data-current-owner="" data-logged-in="false" data-copilot-chat-enabled="false" data-nl-search-enabled="false" data-retain-scroll-position="true">
   <div
     class="search-input-container search-with-dialog position-relative d-flex flex-row flex-items-center tmp-mr-4 rounded"
     data-action="click:qbsearch-input#searchInputContainerClicked"
@@ -440,7 +440,7 @@
           ></div>
           <div class="QueryBuilder-InputWrapper">
             <div aria-hidden="true" class="QueryBuilder-Sizer" data-target="query-builder.sizer"></div>
-            <input id="query-builder-test" name="query-builder-test" value="" autocomplete="off" type="text" role="combobox" spellcheck="false" aria-expanded="false" aria-describedby="validation-01700e81-2f6c-4b5b-809c-c9401ade79d3" data-target="query-builder.input" data-action="
+            <input id="query-builder-test" name="query-builder-test" value="" autocomplete="off" type="text" role="combobox" spellcheck="false" aria-expanded="false" aria-describedby="validation-57d30720-43e5-4caf-b0f8-f169fcf337e7" data-target="query-builder.input" data-action="
           input:query-builder#inputChange
           blur:query-builder#inputBlur
           keydown:query-builder#inputKeydown
@@ -681,7 +681,7 @@
             ></ul>
 
         </div>
-      <div class="FormControl-inlineValidation" id="validation-01700e81-2f6c-4b5b-809c-c9401ade79d3" hidden="hidden">
+      <div class="FormControl-inlineValidation" id="validation-57d30720-43e5-4caf-b0f8-f169fcf337e7" hidden="hidden">
         <span class="FormControl-inlineValidation--visual">
           <svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-alert-fill">
     <path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
@@ -722,7 +722,7 @@
   
 </div>
       <scrollable-region data-labelled-by="feedback-dialog-title">
-        <div data-view-component="true" class="Overlay-body">        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="code-search-feedback-form" data-turbo="false" action="/search/feedback" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="gqoMFPiGyCFvRE9kiFNYeQvXg3afXYwFSZUnQbPM4D9ucOhHkj2Bt28kkYrbf1osDtzNQqLgc_ClJ9tzu_TsuQ" />
+        <div data-view-component="true" class="Overlay-body">        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="code-search-feedback-form" data-turbo="false" action="/search/feedback" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="QAMhdsPfbo50biPMIQuZ5JHhodcEX2I7NB32kCKgnlYKduwVrbTJASVebk34iKgjddScsce80sU27s9n03dFQg" />
           <p>We read every piece of feedback, and take your input very seriously.</p>
           <textarea name="feedback" class="form-control width-full mb-2" style="height: 120px" id="feedback"></textarea>
           <input name="include_email" id="include_email" aria-label="Include my email address so I can be contacted" class="form-control mr-2" type="checkbox">
@@ -760,7 +760,7 @@
         <div data-view-component="true" class="Overlay-body">        <div data-target="custom-scopes.customScopesModalDialogFlash"></div>
 
         <div hidden class="create-custom-scope-form" data-target="custom-scopes.createCustomScopeForm">
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="custom-scopes-dialog-form" data-turbo="false" action="/search/custom_scopes" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ggaTHprJ7h7aznrrzLzYF0G3q8HPOoWtaToYKaO-Q6oy3G6KCPNfxSkhdM0wGCKxRfpk5cBIaj3Eo9hAFOGF8Q" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="custom-scopes-dialog-form" data-turbo="false" action="/search/custom_scopes" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="SW3uT7tV2-S1kUSN3QXICKy1MyeSWFYbAwzQZGjOMlFGIcOJUUpV_eFepXHPu6NTtym4DNbi5rxpQ7F03hvr2A" />
           <div data-target="custom-scopes.customScopesModalDialogFlash"></div>
 
           <input type="hidden" id="custom_scope_id" name="custom_scope_id" data-target="custom-scopes.customScopesIdField">
@@ -778,7 +778,7 @@
                 placeholder="github-ruby"
                 required
                 maxlength="50">
-              <input type="hidden" value="xBDbVvRK_lGkrTGq2oGfmAyBrmRmuFbIGtlGiPEsJtOV_q2duKX-HyGOsoYbt5pyvMxYM-Hiq1GGIAS4HZqvjw" data-csrf="true" />
+              <input type="hidden" value="XWm9PPGmVkaCGdca78BhvA_sY6jANOJBCenH3wi667Bwxnpwpaz792B4Y33lKrKpjUK3lYkQo7FC-Y-J9xzTMw" data-csrf="true" />
             </auto-check>
           </div>
 
@@ -820,10 +820,10 @@
 
             <div class="position-relative HeaderMenu-link-wrap d-lg-inline-block">
               <a
-                href="/login?return_to=https%3A%2F%2Fgithub.com%2Fgoogle%2Ffonts%2Fraw%2Fmain%2Fofl%2Fgooglesans%2FGoogleSans-Medium.ttf"
+                href="/login?return_to=https%3A%2F%2Fgithub.com%2FRetroMusicPlayer%2FRetroMusicPlayer%2Fraw%2Fdev%2Fapp%2Fsrc%2Fmain%2Fres%2Ffont%2Fbold.ttf"
                 class="HeaderMenu-link HeaderMenu-link--sign-in HeaderMenu-button flex-shrink-0 no-underline d-none d-lg-inline-flex border border-lg-0 rounded px-2 py-1"
                 style="margin-left: 12px;"
-                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/fonts/raw/main/ofl/googlesans/GoogleSans-Medium.ttf&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="92520167159a78e3ad1bbe98c4f832e4c3d99d965d4eff6eeeaabd16e284c2d8"
+                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/RetroMusicPlayer/RetroMusicPlayer/raw/dev/app/src/main/res/font/bold.ttf&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0ba6411238bd0df98ef8a88eb68cef2ab654b3dbba9247805497936f19381baa"
                 data-analytics-event="{&quot;category&quot;:&quot;Marketing nav&quot;,&quot;action&quot;:&quot;click to go to homepage&quot;,&quot;label&quot;:&quot;ref_page:Marketing;ref_cta:Sign in;ref_loc:Header&quot;}"
               >
                 Sign in
@@ -833,7 +833,7 @@
     <h4 data-view-component="true" class="color-fg-default mb-2">                    Sign in to GitHub
 </h4>
                         
-<!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/session" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="G2r5H1JM7fFtUw1FIVFmjL_WHN_prLrPG7yCiad3XG13TpBeYfoV0XbtdINu9lwJgr5HjhKDCF-OOyXgESAJUA" />  <input type="hidden" name="add_account" id="add_account" autocomplete="off" class="form-control" />
+<!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/session" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Z1Ezf6DVrYhC3hls2ZjU3josfpjPjtkaGH3gWEI1q0MFoL8f_vf5EwHeAJrt7H8K-ZcGgDo-ZYCxyYm5FDVgbg" />  <input type="hidden" name="add_account" id="add_account" autocomplete="off" class="form-control" />
 
     <label for="login_field">
       Username or email address
@@ -851,17 +851,17 @@
 <input type="hidden" class="js-support" name="javascript-support" value="unknown">
 <input type="hidden" class="js-webauthn-support" name="webauthn-support" value="unknown">
 <input type="hidden" class="js-webauthn-iuvpaa-support" name="webauthn-iuvpaa-support" value="unknown">
-<input type="hidden" name="return_to" id="return_to" value="https://github.com/google/fonts/raw/main/ofl/googlesans/GoogleSans-Medium.ttf" autocomplete="off" class="form-control" />
+<input type="hidden" name="return_to" id="return_to" value="https://github.com/RetroMusicPlayer/RetroMusicPlayer/raw/dev/app/src/main/res/font/bold.ttf" autocomplete="off" class="form-control" />
 <input type="hidden" name="allow_signup" id="allow_signup" autocomplete="off" class="form-control" />
 <input type="hidden" name="client_id" id="client_id" autocomplete="off" class="form-control" />
 <input type="hidden" name="integration" id="integration" autocomplete="off" class="form-control" />
-<input type="text" name="required_field_6bf3" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1772673196818" autocomplete="off" class="form-control" /><input type="hidden" name="timestamp_secret" value="7ee82536eb5df67c2e4b9110a26bb5a4e01911d77b4fe0d44d1234939729bff6" autocomplete="off" class="form-control" />
+<input type="text" name="required_field_bc59" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1772673919517" autocomplete="off" class="form-control" /><input type="hidden" name="timestamp_secret" value="c7e04a372a98534e3ff66f8538a950699f21d75ac6e7dc4425227c168c5c7cc8" autocomplete="off" class="form-control" />
 
     <input type="submit" name="commit" value="Sign in" class="btn btn-primary btn-block js-sign-in-button" data-disable-with="Signing in…" data-signin-label="Sign in" data-sso-label="Sign in with your identity provider" development="false" disable-emu-sso="false" />
   </div>
 </form>  <webauthn-status class="js-webauthn-login-emu-control">
         <div data-target="webauthn-status.partial" class="d-flex flex-justify-between flex-column tmp-mt-3 mb-0" hidden>
-          <a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fgoogle%2Ffonts%2Fraw%2Fmain%2Fofl%2Fgooglesans%2FGoogleSans-Medium.ttf" data-analytics-event="{&quot;category&quot;:&quot;passkey_404_login&quot;,&quot;action&quot;:&quot;clicked&quot;,&quot;label&quot;:null}" data-view-component="true" class="Button--link Button--medium Button">  <span class="Button-content">
+          <a href="/login?return_to=https%3A%2F%2Fgithub.com%2FRetroMusicPlayer%2FRetroMusicPlayer%2Fraw%2Fdev%2Fapp%2Fsrc%2Fmain%2Fres%2Ffont%2Fbold.ttf" data-analytics-event="{&quot;category&quot;:&quot;passkey_404_login&quot;,&quot;action&quot;:&quot;clicked&quot;,&quot;label&quot;:null}" data-view-component="true" class="Button--link Button--medium Button">  <span class="Button-content">
     <span class="Button-label">or continue with other methods</span>
   </span>
 </a>
@@ -871,20 +871,20 @@
 
 </div></div>            </div>
 
-              <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2Fgoogle%2Ffonts%2Fraw%2Fmain%2Fofl%2Fgooglesans%2FGoogleSans-Medium.ttf&amp;source=header"
+              <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2FRetroMusicPlayer%2FRetroMusicPlayer%2Fraw%2Fdev%2Fapp%2Fsrc%2Fmain%2Fres%2Ffont%2Fbold.ttf&amp;source=header"
                 class="HeaderMenu-link HeaderMenu-link--sign-up HeaderMenu-button flex-shrink-0 d-flex d-lg-inline-flex no-underline border color-border-default rounded px-2 py-1"
-                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/fonts/raw/main/ofl/googlesans/GoogleSans-Medium.ttf&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="92520167159a78e3ad1bbe98c4f832e4c3d99d965d4eff6eeeaabd16e284c2d8"
-                data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/google/fonts/raw/main/ofl/googlesans/GoogleSans-Medium.ttf;ref_cta:Sign up;ref_loc:header logged out&quot;}"
+                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/RetroMusicPlayer/RetroMusicPlayer/raw/dev/app/src/main/res/font/bold.ttf&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0ba6411238bd0df98ef8a88eb68cef2ab654b3dbba9247805497936f19381baa"
+                data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/RetroMusicPlayer/RetroMusicPlayer/raw/dev/app/src/main/res/font/bold.ttf;ref_cta:Sign up;ref_loc:header logged out&quot;}"
               >
                 Sign up
               </a>
 
                 <div class="AppHeader-appearanceSettings">
     <react-partial-anchor>
-      <button data-target="react-partial-anchor.anchor" id="icon-button-51961f77-be75-4f1c-97c4-860588c96197" aria-labelledby="tooltip-17c98ef9-e287-4494-a19f-ec2e68b7f3e4" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
+      <button data-target="react-partial-anchor.anchor" id="icon-button-6f8f51a5-2095-49fd-b0bf-14af9966bcd8" aria-labelledby="tooltip-e81f18e0-a5d6-4747-a51d-6abe65668034" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
     <path d="M15 2.75a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Zm-8.5.75v1.25a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0V2H1.75a.75.75 0 0 0 0 1.5H6.5Zm1.25 5.25a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5h6ZM15 8a.75.75 0 0 1-.75.75H11.5V10a.75.75 0 1 1-1.5 0V6a.75.75 0 0 1 1.5 0v1.25h2.75A.75.75 0 0 1 15 8Zm-9 5.25v-2a.75.75 0 0 0-1.5 0v1.25H1.75a.75.75 0 0 0 0 1.5H4.5v1.25a.75.75 0 0 0 1.5 0v-2Zm9 0a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Z"></path>
 </svg>
-</button><tool-tip id="tooltip-17c98ef9-e287-4494-a19f-ec2e68b7f3e4" for="icon-button-51961f77-be75-4f1c-97c4-860588c96197" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
+</button><tool-tip id="tooltip-e81f18e0-a5d6-4747-a51d-6abe65668034" for="icon-button-6f8f51a5-2095-49fd-b0bf-14af9966bcd8" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
 
       <template data-target="react-partial-anchor.template">
         <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.61b70c84b7035dae.module.css" />
@@ -922,10 +922,10 @@
         <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
         <span class="js-stale-session-flash-switched" hidden>You switched accounts on another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
 
-    <button id="icon-button-57242f32-073a-4150-9f90-48976a2b7914" aria-labelledby="tooltip-645a00ba-5a62-499c-9c77-a3d3ca560a2f" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
+    <button id="icon-button-84a115e2-35a5-41c0-bbd0-fc6ff7508c2e" aria-labelledby="tooltip-486b3c79-60ff-4f4d-aa5c-694b217bce7b" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
     <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
 </svg>
-</button><tool-tip id="tooltip-645a00ba-5a62-499c-9c77-a3d3ca560a2f" for="icon-button-57242f32-073a-4150-9f90-48976a2b7914" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Dismiss alert</tool-tip>
+</button><tool-tip id="tooltip-486b3c79-60ff-4f4d-aa5c-694b217bce7b" for="icon-button-84a115e2-35a5-41c0-bbd0-fc6ff7508c2e" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Dismiss alert</tool-tip>
 
 
   
