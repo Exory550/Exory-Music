@@ -79,7 +79,7 @@
             app:settingListItemTitle="@string/others" />
 
         <com.exory550.exorymusic.views.SettingListItemView
-            android:id="@+id/backup_restore_settings"
+            android:id="@+id/backupRestoreSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:settingListItemIcon="@drawable/ic_restore"

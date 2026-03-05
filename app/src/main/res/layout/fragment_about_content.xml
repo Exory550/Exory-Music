@@ -6,7 +6,7 @@
     android:paddingBottom="@dimen/mini_player_height">
 
     <include
-        android:id="@+id/card_retro_info"
+        android:id="@+id/cardExoryInfo"
         layout="@layout/card_exorymusic_info" />
 
 </LinearLayout>

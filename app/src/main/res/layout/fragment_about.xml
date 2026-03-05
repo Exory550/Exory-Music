@@ -8,6 +8,6 @@
     app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
     <include
-        android:id="@+id/about_content"
+        android:id="@+id/aboutContent"
         layout="@layout/fragment_about_content" />
 </androidx.core.widget.NestedScrollView>
