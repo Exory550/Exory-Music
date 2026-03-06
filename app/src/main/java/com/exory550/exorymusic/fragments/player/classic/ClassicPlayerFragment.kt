@@ -152,6 +152,7 @@ class ClassicPlayerFragment : AbsPlayerFragment(R.layout.fragment_classic_player
         }
         requireActivity().onBackPressedDispatcher.addCallback(object: OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
+                if (_binding == null) return
                 if (getQueuePanel().state == BottomSheetBehavior.STATE_EXPANDED) {
                     getQueuePanel().state = BottomSheetBehavior.STATE_COLLAPSED
                 }
