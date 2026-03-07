@@ -97,7 +97,9 @@ object LyricUtil {
     }
 
     private fun getLrcPath(title: String, artist: String): String {
-        return "$lrcRootPath$title - $artist.lrc"
+        val safeTitle = title.replace(Regex("[<>:"/\\|?*]"), "_")
+        val safeArtist = artist.replace(Regex("[<>:"/\\|?*]"), "_")
+        return "$lrcRootPath$safeTitle - $safeArtist.lrc"
     }
 
     private fun getLrcOriginalPath(filePath: String): String {
