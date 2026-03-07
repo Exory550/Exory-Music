@@ -75,6 +75,7 @@ class LyricsFragment : AbsMainActivityFragment(R.layout.fragment_lyrics),
             registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {
                 if (it.resultCode == Activity.RESULT_OK) {
                     FileUtils.copyFileToUri(requireContext(), cacheFile, song.uri)
+                    loadLyrics()
                 }
             }
         editSyncedLyricsLauncher =
