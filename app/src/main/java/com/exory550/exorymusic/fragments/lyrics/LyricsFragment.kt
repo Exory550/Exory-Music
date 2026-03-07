@@ -203,6 +203,7 @@ class LyricsFragment : AbsMainActivityFragment(R.layout.fragment_lyrics),
                 val fieldKeyValueMap = EnumMap<FieldKey, String>(FieldKey::class.java)
                 fieldKeyValueMap[FieldKey.LYRICS] = input.toString()
                 LyricUtil.writeLrc(song, input.toString())
+                android.widget.Toast.makeText(requireContext(), "Saving lyrics to: ${song.title} - ${song.artistName}", android.widget.Toast.LENGTH_LONG).show()
                 GlobalScope.launch {
                     if (VersionUtils.hasR()) {
                         cacheFile = TagWriter.writeTagsToFilesR(
@@ -292,11 +293,17 @@ class LyricsFragment : AbsMainActivityFragment(R.layout.fragment_lyrics),
 
     private fun loadNormalLyrics() {
         val file = File(song.data)
-        val lyrics = try {
+        var lyrics = try {
             AudioFileIO.read(file).tagOrCreateDefault.getFirst(FieldKey.LYRICS)
         } catch (e: Exception) {
             e.printStackTrace()
             ""
+        }
+        if (lyrics.isNullOrEmpty()) {
+            val lrcFile = LyricUtil.getSyncedLyricsFile(song)
+            if (lrcFile != null && lrcFile.exists()) {
+                lyrics = lrcFile.readText()
+            }
         }
         binding.normalLyrics.isVisible = !lyrics.isNullOrEmpty()
         binding.noLyricsFound.isVisible = lyrics.isNullOrEmpty()
