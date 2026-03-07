@@ -202,6 +202,7 @@ class LyricsFragment : AbsMainActivityFragment(R.layout.fragment_lyrics),
             ) { _, input ->
                 val fieldKeyValueMap = EnumMap<FieldKey, String>(FieldKey::class.java)
                 fieldKeyValueMap[FieldKey.LYRICS] = input.toString()
+                LyricUtil.writeLrc(song, input.toString())
                 GlobalScope.launch {
                     if (VersionUtils.hasR()) {
                         cacheFile = TagWriter.writeTagsToFilesR(
